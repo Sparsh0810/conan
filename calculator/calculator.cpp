@@ -1,10 +1,11 @@
 
 #include <string>
 #include <iostream>
+#include "calculator.h"
 
 
-
-int main() {
+void calculator() {
+  #ifdef NDEBUG
 
   char op;
   float num1, num2;
@@ -40,4 +41,5 @@ int main() {
   }
 
   return 0;
+  #endif
 }
